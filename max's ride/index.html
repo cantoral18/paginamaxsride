@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max's Ride</title>
+    <link rel="icon" href="./favicon2.ico" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #c0ae11;
+        }
+        footer {
+            background: #c0ae11;
+            color: white;
+            padding: 10px 0;
+            font-family: Arial, sans-serif; 
+            font-size: 16px;
+            font-weight: bold;
+        }
+        /* Ajuste para las imágenes del carrusel */
+        .carousel-item img {
+            height: 100%; /* Asegura que las imágenes se ajusten a la altura del contenedor */
+            object-fit: cover; /* Hace que las imágenes cubran todo el área sin perder proporción */
+            width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+        }
+        /* Estilo de la sección del carrusel */
+        #carouselExample {
+            background-color: #65752c; /* Fondo blanco para la sección del carrusel */
+            padding: 0; /* Quitar padding extra */
+        }
+        .carousel-inner {
+            height: 100%; /* Asegura que el contenedor interior tenga el 100% de altura */
+        }
+        /* Estilo adicional para evitar desbordamiento de las imágenes */
+        #carouselExampleIndicators {
+            height: 400px;  /* Ajusta la altura del carrusel */
+            overflow: hidden; /* Evita que las imágenes se desborden fuera del contenedor */
+        }
+    
+        .info-section {
+            background-color: #e2f394;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .card {
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 15px;
+            font-size: 2.5rem; /* Aumentar tamaño de iconos */
+            transition: transform 0.2s; /* Efecto de transición */
+        }
+        .social-icons a:hover {
+            transform: scale(1.2); /* Efecto de hover */
+        }
+    </style>
+    
+</head>
+<body>
+
+<!-- <header class="bg-success text-white text-center py-4"> -->
+<header class="bg-info text-white text-center py-4">
+
+    <div class="container">
+        <div class="row align-items-center">
+          <div class="col-auto logo-container">
+            <img src="Logo concesionario.png" alt="Logo concesionario" width="100" height="100" class="img-fluid rounded-circle shadow-sm " style="padding-bottom: 15px;">
+          </div>
+          <div class="col text-center">
+            <h1 class="display-4">Max' Ride</h1>
+          </div>
+        </div>
+    </div>
+        
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">  
+        <div class="container">
+            <a class="navbar-brand" href="#">Max' Ride</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#info">Información</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#contactModal">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container mt-5">
+    <section id="info" class="mb-5 info-section">
+        <h3>Max's Ride: Tu destino ideal para encontrar el auto de tus sueños</h3>
+
+        <p>En Max Ride, nos especializamos en ofrecer una amplia gama de vehículos de alta calidad, adaptados a tus necesidades y presupuesto. Nuestro compromiso es brindarte una experiencia de compra excepcional, con opciones de financiamiento flexibles, garantías confiables y un equipo de expertos listo para asesorarte en cada paso del camino.</p>
+            
+        <p>Visítanos y descubre por qué Max Ride es más que una concesionaria: somos tu compañero en el camino hacia la aventura y la confianza al volante.</p>
+    </section>
+
+    <section id="carouselExample" class="mb-5">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="hover">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imagenes/ferrari f8.jpg" class="d-block w-100" alt="ferrari f8" style="object-fit: cover; height: 500px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/Lamborghini Huracán EVO.jpg" class="d-block w-100" alt="Lamborghini Huracán EVO" style="object-fit: cover; height: 500px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/Chevrolet Corvette C8.jpg" class="d-block w-100" alt="Chevrolet Corvette C8" style="object-fit: cover; height: 500px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/Nissan GT-R.jpg" class="d-block w-100" alt="Nissan GT-R" style="object-fit: cover; height: 500px;">
+                </div>
+            
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </section>
+    
+
+    <style>
+        #carouselExampleIndicators {
+            height: 500px;  
+            overflow: hidden; 
+        }
+    
+        .carousel-inner {
+            height: 100%;
+        }
+    
+        .carousel-item img {
+            object-fit: cover; 
+            width: 100%;
+            height: 100%; 
+        }
+    </style>
+    
+<section class="mb-5">
+    <h2 class="text-center">Servicios que Ofrecemos</h2>
+    <div class="row">
+        
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <i class="fas fa-car fa-3x mb-3" style="color: #eb2b2b;"></i>
+                    <h5 class="card-title">Venta de Autos Nuevos</h5>
+                    <p class="card-text">Descubre una amplia gama de vehículos nuevos, listos para llevarte a donde quieras ir.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Servicio 2 -->
+        <!-- <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <i class="fas fa-car-side fa-3x mb-3" style="color: #eb2b2b;"></i>
+                    <h5 class="card-title">Venta de Autos Usados</h5>
+                    <p class="card-text">Explora opciones confiables de autos usados con garantía certificada.</p>
+                </div>
+            </div>
+        </div> -->
+        <!-- Servicio 3 -->
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <i class="fas fa-tools fa-3x mb-3" style="color: #17a2b8;"></i>
+                    <h5 class="card-title">Servicio Técnico y Mantenimiento</h5>
+                    <p class="card-text">Ofrecemos mantenimiento preventivo y reparaciones para mantener tu auto en perfectas condiciones.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Servicio 4 -->
+        <div class="col-md-3">
+            <div class="card mb-3">
+                <div class="card-body text-center">
+                    <i class="fas fa-shield-alt fa-3x mb-3" style="color: #17a2b8;"></i>
+                    <h5 class="card-title">Garantías y Seguros</h5>
+                    <p class="card-text">Protege tu inversión con nuestras opciones de garantía extendida y seguros vehiculares.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Servicio 5 -->
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <i class="fas fa-handshake fa-3x mb-3" style="color: #eb2b2b;"></i>
+                    <h5 class="card-title">Financiamiento</h5>
+                    <p class="card-text">Facilitamos la compra de tu auto con planes de financiamiento adaptados a ti.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Modal de Contacto -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">ENVIAR</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <form id="myForm">
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="fecha">Fecha</label>
+            <input type="date" class="form-control" id="fecha" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+        </div>
+        
+        <div class="acciones mt-3">
+            <label for="acciones">Acciones</label>
+            
+            
+        
+            <button type="button" class="btn btn-danger" id="eliminarBtn">Eliminar</button>
+            
+            
+            <button type="button" class="btn btn-warning" id="editarBtn">Editar</button>
+            
+       
+            <button type="submit" class="btn btn-success" id="enviarBtn">Enviar</button>
+        </div>
+    </form>
+    
+  
+    <div id="mensajeExito" class="mt-3" style="display:none; color: green;">
+        <h3>¡Gracias por enviar un mensaje de Max's Ride!</h3>
+    </div>
+</div>
+
+<script>
+    
+    document.getElementById("eliminarBtn").addEventListener("click", function() {
+        
+        document.getElementById("name").value = "";
+        document.getElementById("fecha").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        
+    });
+
+    
+    document.getElementById("editarBtn").addEventListener("click", function() {
+       n
+        document.getElementById("name").removeAttribute("disabled");
+        document.getElementById("fecha").removeAttribute("disabled");
+        document.getElementById("email").removeAttribute("disabled");
+        document.getElementById("message").removeAttribute("disabled");
+       
+        
+       
+        document.getElementById("name").focus();
+    });
+
+    
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+
+        
+        document.getElementById("mensajeExito").style.display = "block";
+
+        
+         document.getElementById("myForm").reset();
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center">
+    <p>Contáctanos en: maxsride3@gmail.com | Tel: 978324969</p>
+    <p>Ubicanos en: Jr. Jose Maria Arguedas Mz 6  Lte 18</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/share/1Npv3DFRMs/" target="_blank" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/maxride42/profilecard/?igsh=MW0zM3YyZHFyY2M4Ng==" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@maxs.ride3?_t=8qQp6uj41UE&_r=1" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.youtube.com/channel/UCV8dQljP2YCblhETnq54OXw" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+        
+        <a href="https://wa.me/51978324969?text=Hola,+necesito+información+sobre+Max's Ride" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <!-- <a href="https://agro-zoe.webnode.page/contact/" target="_blank" title="Pagina secundaria">
+            <img src="./logo.jpeg" alt="agro zoe" width="40" height="40" style="padding-bottom: 5px; margin-top: 7px;">
+        </a> -->
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

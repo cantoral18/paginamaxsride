@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Max's Ride</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        footer {
+            background: #ced108;
+            color: white;
+            padding: 10px 0;
+        }
+        .card {
+            transition: transform 0.2s;
+            margin-bottom: 30px;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .product-title {
+            color: #0d0e0d;
+        }
+        .product-description {
+            color: #555;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 15px;
+            font-size: 2rem; /* Aumentar tamaño de iconos */
+            transition: transform 0.2s; /* Efecto de transición */
+        }
+        .social-icons a:hover {
+            transform: scale(1.2); /* Efecto de hover */
+        }
+    </style>
+</head>
+<body>
+
+<header class="bg-info text-white text-center py-4">
+    <div class="container">
+        <div class="row align-items-center">
+          <div class="col-auto logo-container">
+            <img src="Logo concesionario.png" alt="Logo concesionario" width="100" height="100" class="img-fluid rounded-circle shadow-sm " style="padding-bottom: 15px;">
+          </div>
+          <div class="col text-center">
+            <h1 class="display-4">Catálogo de Autos</h1>
+          </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Max' Ride</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container mt-5">
+    <section>
+        <h2 class="text-center mb-4">Autos Disponibles</h2>
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./imagenes/ferrari f8.jpg" class="card-img-top" alt="Ferrari F8 Tributo">
+                    <div class="card-body text-center">
+                        <h5 class="card-title product-title">Ferrari F8 Tributo</h5>
+                    <p class="card-text product-description">Un superdeportivo con motor V8 turboalimentado de 710 HP, capaz de acelerar de 0 a 100 km/h en 2.9 segundos.</p>
+                    <a href="#" class="btn btn-info">ver</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./imagenes/Lamborghini Huracán EVO.jpg" class="card-img-top" alt="Fertilizante de suelo">
+                    <div class="card-body text-center">
+                        <h5 class="card-title product-title">Lamborghini Huracán EVO</h5>
+                        <p class="card-text product-description">Equipado con un motor V10 de 5.2 litros y 640 HP, diseñado para ofrecer máxima emoción en la carretera.</p>
+                        <a href="#" class="btn btn-info">Ver</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./imagenes/Porsche 911 Turbo S.jpg" class="card-img-top" alt="Porsche 911 Turbo S">
+                    <div class="card-body text-center">
+                        <h5 class="card-title product-title">Porsche 911 Turbo S</h5>
+                    <p class="card-text product-description">Con un motor de 640 HP, el 911 Turbo S combina lujo y rendimiento, alcanzando 330 km/h.</p>
+                    <a href="#" class="btn btn-info">Ver</a>
+                    </div>
+                </div>
+            </div>
+           
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./imagenes/McLaren 720S.jpg" class="card-img-top" alt="McLaren 720S">
+                    <div class="card-body text-center">
+                        <h5 class="card-title product-title">McLaren 720S</h5>
+                    <p class="card-text product-description">Superdeportivo con diseño futurista y motor V8 biturbo de 720 HP, diseñado para la velocidad extrema.</p>
+                    <a href="#" class="btn btn-info">Ver</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./imagenes/Aston Martin DB11.jpg" class="card-img-top" alt="Aston Martin DB11">
+                    <div class="card-body text-center">
+                        <h5 class="card-title product-title">Aston Martin DB11</h5>
+                    <p class="card-text product-description">Elegante y poderoso, con un motor V12 de 630 HP, combina rendimiento y lujo británico.</p>
+                    <a href="#" class="btn btn-info">Ver</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./imagenes/Bugatti Chiron.jpg" class="card-img-top" alt="Bugatti Chiron">
+                    <div class="card-body text-center">
+                        <h5 class="card-title product-title">Bugatti Chiron</h5>
+                        <p class="card-text product-description">Un hiperdeportivo legendario con motor W16 de 1,500 HP, diseñado para alcanzar velocidades inimaginables.</p>
+                        <a href="#" class="btn btn-info">Ver</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./imagenes/Chevrolet Corvette C8.jpg" class="card-img-top" alt="Chevrolet Corvette C8">
+                    <div class="card-body text-center">
+                        <h5 class="card-title product-title">Chevrolet Corvette C8</h5>
+                        <p class="card-text product-description">Un ícono americano con motor central V8 de 495 HP, redefiniendo el rendimiento y la accesibilidad.</p>
+                        <a href="#" class="btn btn-info">Ver</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./imagenes/Nissan GT-R.jpg" class="card-img-top" alt="Nissan GT-R">
+                    <div class="card-body text-center">
+                        <h5 class="card-title product-title">Nissan GT-R</h5>
+                        <p class="card-text product-description">Apodado "Godzilla", este deportivo japonés cuenta con un motor V6 biturbo de 565 HP y tracción total.</p>
+                        <a href="#" class="btn btn-info">Ver</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./imagenes/Tesla Roadster.jpg" class="card-img-top" alt="Tesla Roadster">
+                    <div class="card-body text-center">
+                        <h5 class="card-title product-title">Tesla Roadster</h5>
+                    <p class="card-text product-description">Deportivo eléctrico que ofrece una aceleración de 0 a 100 km/h en 1.9 segundos y una autonomía de 1,000 km.</p>
+                    <a href="#" class="btn btn-info">Ver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<!-- Sección de descarga PDF -->
+<div class="pdf-download text-center mb-5 p-4">
+    <button class="btn btn-outline-primary btn-lg" onclick="location.href='Catalogo MaxsRide.pdf';">
+      <i class="fas fa-file-pdf fa-lg"></i> Descargar catálogo PDF
+    </button>
+  </div>
+
+  <footer class="text-center">
+    <p>Contáctanos en: maxsride3@gmail.com | Tel: 978324969</p>
+    <p>Ubicanos en: Jr. Jose Maria Arguedas Mz 6  Lte 18</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/share/1Npv3DFRMs/" target="_blank" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/maxride42/profilecard/?igsh=MW0zM3YyZHFyY2M4Ng==" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@maxs.ride3?_t=8qQp6uj41UE&_r=1" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.youtube.com/channel/UCV8dQljP2YCblhETnq54OXw" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <!-- <a href="https://agropecuaria-zoe-8j2a.glide.page/dl/da19fa" target="_blank" title="Glide"><i class="fab fa-glide"></i></a> -->
+        <a href="https://wa.me/51978324969?text=Hola,+necesito+información+sobre+Max's Ride" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <!-- <a href="https://agro-zoe.webnode.page/contact/" target="_blank" title="Pagina secundaria">
+            <img src="./logo.jpeg" alt="agro zoe" width="40" height="40" style="padding-bottom: 5px; margin-top: 7px;"> -->
+        </a>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
